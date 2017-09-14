@@ -1275,12 +1275,14 @@ a {
 
 .primary-nav {
 	padding-top: 10px;
+
 }
 
 @media (min-width: 800px) {
 
 .primary-nav {
 		padding-top: 0
+
 }
 	}
 
@@ -1336,13 +1338,29 @@ a {
 		padding: 5px 8px;
 		font-size: .8rem;
 		background-color: rgba(47,85,114, .5);
+
 	}
 
 @media (min-width: 800px) {
 
-.primary-nav {
-		font-size: 1rem;
-		padding: 12px 0;
-		background-color: transparent
-}
+.primary-nav a {
+			font-size: 1rem;
+			padding: 12px 0;
+			background-color: transparent
+
 	}
+	}
+
+.reveal-item {
+  opacity: 0;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+.reveal-item--is-visible {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
